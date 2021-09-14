@@ -2,32 +2,61 @@ version: "2.0"
 
 intents:
   - greet
-  - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - inform:
+      use_entities: true
+  - restart
+  - chitchat:
+      use_entities: []
+  - consultation:
+      use_entities: true
+  - human_handoff:
+      use_entities: true
+  - out_of_scope
+
+entities:
+  - name
+  - email
+  - ecommerce
+  - support
+
+slots:
+  email:
+    type: any
+    auto_fill: true
+  name:
+    type: text
+    auto_fill: true
 
 responses:
+  utter_ask_name:
+    - text: "Hey! My name is Pete, I am a bot developed by Unsalty Technologies, whats your name?"
+
+  utter_greet_by_name:
+    - text: "Nice to meet you {name}! How are you doing?"
+
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "Nice to meet you! How are you doing?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+    - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
+    - text: "Great!, how can I help you today? I can tell you about our company, how we can help you or why you should consider implementign a chatbot into your business!"
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Bye! Was nice chatting to you, if you'd like you can restart this conversation by simply telling me too."
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "I am a bot, built and maintained by Unsalty Technologies"
+
+config:
+  store_entities_as_slots: true
 
 session_config:
   session_expiration_time: 60
