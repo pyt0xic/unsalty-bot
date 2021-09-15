@@ -322,39 +322,57 @@ nlu:
       - [example@unsalty.com](email)
       - my email is [example@yahoo.com](email)
       - it's [example@gmail.com](email)
-      - it's 123
+      - it's [123](amount)
+      - its [R50000](amount)
+      - my budget is [R10000](budget)
+      - i can spend [20000](budget)
+      - i want to spend [35000](budget)
+      - i havea budget of [5000](budget)
+      - my budget is [R10000](budget)
+      - my budgets [20000](budget)
+      - i can spend [55000](budget)
+      - i can afford [R12000](budget)
+      - i can afford [15000](budget)
+      - budget is [3000](amount)
       - it's [a@b.com](email)
-      - [xyz@hulaloo.ai](email)
+      - it's [R20000](budget)
+      - its [15000](budget)
+      - it is [30000](amount)
+      - [xyz@hulaloo.ai](mail)
       - wait actually that email is wrong. it should be [asdf1@asdf.com](email)
       - [asdf@asdf.com](email)
-      - [test@test.com](email)
+      - [test@test.com](mail)
       - my email is [Carole@Hart.com](email)
       - my email is [Elinor_Stock@Higgenbotham.com](email)
       - my email is [K_Spivey@yahoo.com](email)
       - my email is [Kelly@Coulter.net](email)
       - my email is [M_Jones@Luna.com](email)
-      - my email is [Mia_Gainey@gmail.com](email)
+      - my email is [Mia_Gainey@gmail.com](mail)
       - my email is [S_Calderon@Cofield.com](email)
       - my email is [Virginia@Brown.com](email)
-      - my emayl is [V_Comley@Nelson.com](email)
+      - my emayl is [V_Comley@Nelson.com](mail)
       - my name is [Alexander Kohn](name)
       - my name is [betty mclendon](name)
       - my name is [Brian Leung](name)
-      - my name is [Claude Ake](name)
+      - my name is [Claude Ake](naam)
       - my name is [Earl Ring](name)
       - my name is [Felicia Cosby](name)
       - my name is [Frances Kunkle](name)
       - my name is [Greg King](name)
-      - my name is [james culpit](name)
+      - my name is [james culpit](names)
       - my name is [Jermaine Mccleery](name)
       - my name is [John Evers](name)
       - my name is [Joseph Parson](name)
       - my name is [Monica Ser](name)
-      - my name is [Nigel Partida](name)
+      - my name is [Nigel Partida](names)
       - my name is [Staci Simpson](name)
       - my name is [susan crandall](name)
       - my name is [Tabitha Schoenthal](name)
-      - my name's [Michael Peppers](name)
+      - my name's [Michael Peppers](naam)
+      - my names [Peter](naam)
+      - name is [Eric](name)
+      - my name's [Greg](name)
+      - my name is [Sebastian](name)
       - i run an [online store](ecommerce)
       - i [sell online](ecommerce)
       - i [sell clothes](ecommerce)
@@ -588,11 +606,9 @@ nlu:
       - what is unsalty technologies
       - what is Unsalty
       - wat do u do
-  - intent: faq/tech
+  - intent: faq/how
     examples: |
       - how does it work?
-      - what is a chatbot
-      - what is a bot
       - how do bots work?
       - what is artificial intelligence
       - what is ai
@@ -607,10 +623,32 @@ nlu:
       - ai?
       - artifcial intelligence?
       - artificial intelligence
-      - wht is chat bot?
       - how does a bbot work?
       - chat bot work?
       - what tech
+      - how does it understand
+      - how does it understand users?
+      - how does it understand customers
+      - does it understand
+      - can it understand?
+      - can it really understand
+      - can it understand text
+      - how does it know what to say
+      - how does it decide what to say?
+      - how does it know what to do
+      - how does it know what to say
+      - hwo does it know
+      - what is artificial inteligenc
+      - what is natural language processing?
+      - what is nlp
+      - nlp?
+      - natural language processing?
+      - how does it undetstand humans
+      - does it sound like a human
+      - how does it use ai
+      - how does nlp work?
+      - how does natural language processing work?
+      - how does decide what to do
   - intent: faq/why_us
     examples: |
       - why you?
@@ -668,6 +706,43 @@ nlu:
       - what are the expenses
       - how much money?
       - i don't know if i can afford it
+  - intent: faq/what_bot
+    examples: |
+      - what is a bot?
+      - what is a chat bot
+      - what is a chatbot
+      - what's a chatbot?
+      - tell me what a bot is
+      - please explain what a chatbot is
+      - explain what a chat bot is
+      - tell me what a chatbot is
+      - what isa virtual assistant?
+      - what's a virtual assistant
+      - what is virtual assistant
+      - what is chatbot?
+      - what is chat bot
+      - wat is n chatbot?
+      - wat is a bot
+      - wat is chat bot
+  - intent: faq/where
+    examples: |
+      - where is the chatbot?
+      - where is the bot
+      - were is the chat bot
+      - where is it?
+      - where does it live
+      - where is it hosted?
+      - do i have to host
+      - do i need to host it
+      - where is the server?
+      - do i need a server?
+      - were is the chatbot?
+      - waar is the chat bot
+      - where is the bot located
+      - do i host the chatbot?
+      - do i host
+      - must i host it
+      - must i host the bot
   - intent: out_of_scope
     examples: |
       - mmm I can't see what you're saying
@@ -712,16 +787,13 @@ nlu:
       - Can you make sandwiches?
       - Can you please send me an uber
 
-  - synonym: " duration"
+  - synonym: email
     examples: |
-      - durations
-      - how long
-  - synonym: date
-    examples: |
-      - dates
-  - synonym: money
-    examples: |
-      - amounts
+      - mail
   - synonym: name
     examples: |
       - names
+      - naam
+  - synonym: budget
+    examples: |
+      - amount
