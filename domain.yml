@@ -18,8 +18,18 @@ intents:
 entities:
   - name
   - email
+  - number
+  - budget
   - ecommerce
   - support
+  - helpdesk
+  - insurance
+  - finance
+  - healthcare
+  - real_estate
+  - news
+  - language
+  - location
 
 slots:
   email:

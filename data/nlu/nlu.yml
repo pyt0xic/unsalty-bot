@@ -1,0 +1,134 @@
+version: "2.0"
+
+nlu:
+  - intent: inform
+    examples: |
+      - example@unsalty.com
+      - my email is example@yahoo.com
+      - it's example@gmail.com
+      - it's 123
+      - its R50000
+      - my budget is R10000
+      - i can spend 20000
+      - i want to spend R35000
+      - i havea budget of 5000
+      - my budget is R10000
+      - my budgets 20000
+      - i can spend 55000
+      - i can afford R12000
+      - i can afford 15000
+      - budget is 3000
+      - it's a@b.com
+      - it's R20000
+      - its 15000
+      - it is 30000
+      - the amount is $3000
+      - the amount is R20000
+      - xyz@hulaloo.ai
+      - wait actually that email is wrong. it should be asdf1@asdf.com
+      - asdf@asdf.com
+      - test@test.com
+      - my email is Carole@Hart.com
+      - my email is Elinor_Stock@Higgenbotham.com
+      - my email is K_Spivey@yahoo.com
+      - my email is Kelly@Coulter.net
+      - my email is M_Jones@Luna.com
+      - my email is Mia_Gainey@gmail.com
+      - my email is S_Calderon@Cofield.com
+      - my email is Virginia@Brown.com
+      - my emayl is V_Comley@Nelson.com
+      - my name is [Alexander Kohn](name)
+      - my name is [betty mclendon](name)
+      - my name is [Brian Leung](name)
+      - my name is [Claude Ake](name)
+      - my name is [Earl Ring](name)
+      - my name is [Felicia](name)
+      - my name is [Frances Kunkle](name)
+      - my name is [Greg King](name)
+      - my name is [james culpit](name)
+      - my name is [Jermaine Mccleery](name)
+      - my name is [John Evers](name)
+      - my name is [Joseph](name)
+      - my name is [Monica Ser](name)
+      - my name is [Nigel Partida](name)
+      - my name is [Staci Simpson](name)
+      - my name is [susan crandall](name)
+      - my name is [Tabitha Schoenthal](name)
+      - my name's [Michael Peppers](name)
+      - my names [Peter](name)
+      - name is [Eric](name)
+      - my name's [Greg](name)
+      - my name is [Sebastian](name)
+      - i run an [online store](ecommerce)
+      - i [sell online](ecommerce)
+      - i [sell clothes](ecommerce)
+      - i [sell computer parts](ecommerce)
+      - run an [online store](ecommerce)
+      - i own an [online business](ecommerce)
+      - i [sell](ecommerce) books
+      - i [sell](ecommerce) jewelry
+      - [sell](ecommerce) jewellery online
+      - [ecommerce](ecommerce)
+      - i run a [ecommerce site](ecommerce)
+      - work in [sales](ecommerce)
+      - own a clothing[store](ecommerce)
+      - i [sell](ecommerce) electronics
+      - i own an [electronics store](ecommerce)
+      - i want [more sales](ecommerce)
+      - [increase revenue](ecommerce)
+      - how can i [boost sales](ecommerce)
+      - i need [more leads](ecommerce)
+      - can you help me [generate leads](ecommerce)
+      - give me [more leeds](ecommerce)
+      - i want [more money](ecommerce)
+      - [leads](ecommerce)
+      - i want [more conversions](ecommerce)
+      - i need [more customers](ecommerce)
+      - help me [upsell](ecommerce)
+      - help me [sell more](ecommerce)
+      - i want to [save money](support)
+      - i want to [cut costs](support)
+      - i want to [spend less](support)
+      - i need better [customer service](support)
+      - i want [customer support](support)
+      - how do i make my [customers happier](support)
+      - i want a bot that can [answer questions](support)
+      - i need to [save time](support) on [support](support)
+      - improve [customer satisfaction](support)
+      - i want to [satisy] my customers better
+      - how do i get [better reviews](support)
+      - i want to improve [user experience](support)
+  - intent: why_bot
+    examples: |
+      - why do i need a chatbot
+      - why do i need a chat bot
+      - why do i need a bot
+      - why do i ned a chatbot?
+      - why chatbot?
+      - why a chat bot
+      - why should i use a chatbot in my business?
+      - why should i get a chatbot
+      - why are chatbots useful
+      - are chatbots useful?
+      - do bots help
+      - can chatbot save me money
+      - can unsalty save me money
+      - can you help me make more money
+      - make me money
+      - save money
+      - do i need a chat bot
+      - do i need a chatbot?
+      - are bots actually useful
+      - why dp i need unsalty chatbot?
+      - how can a bot save me money
+      - how can chatbots make me more money
+      - do bots make customers happy
+      -
+
+  - synonym: name
+    examples: |
+      - names
+      - naam
+  - synonym: budget
+    examples: |
+      - amount
